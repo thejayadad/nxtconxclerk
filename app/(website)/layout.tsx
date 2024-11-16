@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './_components/header/header';
+import Wrapper from './_components/ui/wrapper';
 
 const layout = ({
     children,
@@ -10,7 +11,9 @@ const layout = ({
     <div>
       <Header />
 
-        {children}
+      <Wrapper>
+      {children}
+      </Wrapper>
     </div>
   )
 }
