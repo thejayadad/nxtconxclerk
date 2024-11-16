@@ -6,17 +6,14 @@ export default function Home() {
     <div>
       <h1>homePage</h1>
 
-      {/* Display UserButton for signed-in users */}
       <SignedIn>
         <div>
           <h2>Welcome back!</h2>
           <UserButton />
-          {/* SignOut button for signed-in users */}
           <SignOutButton />
         </div>
       </SignedIn>
 
-      {/* Display SignIn and SignUp buttons for signed-out users */}
       <SignedOut>
         <div>
           <h2>Please sign in or sign up</h2>
