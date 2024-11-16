@@ -1,4 +1,5 @@
-import Sidebar from "./_components/sidebar/Sidebar";
+import React from 'react'
+import Header from './_components/header/header';
 
 const layout = ({
     children,
@@ -6,13 +7,11 @@ const layout = ({
     children: React.ReactNode;
   }>) => {
   return (
-    <>
-    {/* Server component ignore error */}
-      <Sidebar />
-       <div className="">
+    <div>
+      <Header />
+
         {children}
     </div>
-    </>
   )
 }
 
